@@ -1,0 +1,39 @@
+- Create venv command:
+python -m venv env
+
+- Activate venv:
+Linux: source env/bin/activate
+Win: source env/Scripts/activate
+
+- Install Django:
+pip install Django
+
+- Check Django version:
+python -m django --version
+
+- Create Django project:
+django-admin startproject config .
+
+- Create new Django aplication:
+python manage.py startapp app_name
+
+- Create requirements.txt automatically:
+pip freeze > requirements.txt
+
+- Install all packages using requirements.txt:
+pip install -r requirements.txt
+
+- Start server in local host:
+python manage.py runserver
+
+- Apply the migrations for apps
+python manage.py migrate
+
+- Open python file using terminal:
+python manage.py shell
+
+- Create super user:
+python manage.py createsuperuser
+
+- Create model:
+python manage.py makemigrations my_app
