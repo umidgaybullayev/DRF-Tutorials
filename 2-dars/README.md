@@ -9,3 +9,6 @@
 * /umidgaybullayev -- optional path
 
 ## HTTP METHODS --> CRUD operatsiyalari
+
+## CRUD:
+... CREAT <--> POST REQUEST 
