@@ -21,4 +21,4 @@
 
 WEB API ning backend qismida endpointlar ro'yhati bo'ladi.
 1) https://www.mysite.uz/api/books -- GET request - barcha kitoblarni jo'natadi.
-2) https://www.mysite.uz/api/books/<id> -- Birgina kitobni (id ga ko'ra) bizga qaytaradi.
+2) https://www.mysite.uz/api/books/id -- Birgina kitobni (id ga ko'ra) bizga qaytaradi.
