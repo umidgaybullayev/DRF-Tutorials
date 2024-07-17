@@ -11,4 +11,4 @@
 ## HTTP METHODS --> CRUD operatsiyalari
 
 ## CRUD:
-... CREAT <--> POST REQUEST 
+⋅⋅⋅ CREAT <--> POST REQUEST 
