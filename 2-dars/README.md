@@ -11,4 +11,10 @@
 ## HTTP METHODS --> CRUD operatsiyalari
 
 - CRUD:
-    - CREAT <--> POST REQUEST 
+    - CREAT <---> POST REQUEST 
+    - READ <---> GET
+    - UPDATE <---> PUT(PATCH)
+    - DELETE <---> DELETE
+
+#### WEBSITE -- HTML, CSS, IMAGES, JS lardan tashkil topadi
+#### WEB API -- endpoints y'ani CRUD http requestlarini jo'natish orqali amalga oshirishimiz mumkin bo'lgan URL lar to'plami.  
