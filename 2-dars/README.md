@@ -54,3 +54,4 @@ Response
 ## STATUS CODES
 
 - 1XX -- informational response -> request qabul qilindi jarayon davom etyapdi. 
+- 2XX -- successful -> muvaffaqiyatli bajarildi.
