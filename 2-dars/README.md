@@ -50,3 +50,7 @@ Ular:
 Response
 
 ![alt text](image-2.png)
+
+## STATUS CODES
+
+- 1XX -- informational response -> request qabul qilindi jarayon davom etyapdi. 
