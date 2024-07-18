@@ -53,5 +53,8 @@ Response
 
 ## STATUS CODES
 
-- 1XX -- informational response -> request qabul qilindi jarayon davom etyapdi. 
-- 2XX -- successful -> muvaffaqiyatli bajarildi.
+- 1XX -- informational response -> the request was received, countinuning process.
+- 2XX -- successful -> the request was successfully received, understood and accepted.
+- 3XX -- redirection -> futher action needs to be taken in order to complate the request.
+- 4XX -- client error -> the request contains bad syntax or can't be fulfilled. 
+- 5XX -- server error -> the server failed to fulfil an apparently valid request.
