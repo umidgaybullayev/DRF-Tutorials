@@ -33,3 +33,4 @@ WEB API ning backend qismida endpointlar ro'yhati bo'ladi.
     "author":"Cho'lpon"
     }
 ```
+![alt text](image.png)
