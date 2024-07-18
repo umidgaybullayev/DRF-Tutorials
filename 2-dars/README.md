@@ -34,3 +34,8 @@ WEB API ning backend qismida endpointlar ro'yhati bo'ladi.
     }
 ```
 ![alt text](image.png)
+
+> [NOTE] 
+> http request 3 ta komponentdan iborat boladi
+
+![alt text](image-1.png)
