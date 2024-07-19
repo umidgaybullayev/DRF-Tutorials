@@ -13,7 +13,7 @@ schema_view = get_schema_view(
         contact=openapi.Contact(email='umidgaybullayev955@gmail.com'),
         license=openapi.License(name="demo license"),
     ),
-    public=True
+    public=True,
     permission_classes=[permissions.AllowAny, ],
 )
 
