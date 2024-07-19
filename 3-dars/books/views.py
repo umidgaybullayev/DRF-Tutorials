@@ -32,6 +32,10 @@ class BookListCreateApiView(generics.CreateAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
+class BookUpdateDeleteApiView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
+
 # Function based view in DRF
 # many=True -> ko'p object borligini bildiradi
 @api_view(['GET'])
