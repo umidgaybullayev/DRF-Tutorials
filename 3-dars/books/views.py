@@ -53,9 +53,20 @@ class BookListCreateApiView(generics.CreateAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
 
-class BookUpdateDeleteApiView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Book.objects.all()
-    serializer_class = BookSerializer
+# class BookUpdateDeleteApiView(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = Book.objects.all()
+#     serializer_class = BookSerializer
+
+class BookUpdateDeleteApiView(APIView):
+    def get(self, request, pk):
+        book = Book.objects.get(id=pk)
+        serializer_data = BookSerializer(book).data
+
+        data = {
+            "status": "Successfull",
+            "book": serializer_data
+        }
+        return Response(data)
 
 # Function based view in DRF
 # many=True -> ko'p object borligini bildiradi
