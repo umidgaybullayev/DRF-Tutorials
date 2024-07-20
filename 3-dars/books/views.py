@@ -15,7 +15,12 @@ class BookListApiView(APIView):
 
     def get(self, request):
         books = Book.objects.all()
-        print(books)
+        serializer_data = BookSerializer(books, many=True).data
+        data = {
+            "status": f"Returned {len(books)} books",
+            "book": serializer_data
+        }
+        return Response(data)
 
 class BookDetailAPIView(generics.RetrieveAPIView):
     queryset = Book.objects.all()
