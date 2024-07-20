@@ -3,18 +3,23 @@ from .serializers import BookSerializer
 from rest_framework import generics
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework.views import APIView
 
 # Create your views here.
 
-class BookListApiView(generics.ListAPIView):
-    queryset = Book.objects.all()
-    serializer_class = BookSerializer
+# class BookListApiView(generics.ListAPIView):
+#     queryset = Book.objects.all()
+#     serializer_class = BookSerializer
 
+class BookListApiView(APIView):
+
+    def get(self, request):
+        books = Book.objects.all()
+        print(books)
 
 class BookDetailAPIView(generics.RetrieveAPIView):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
-
 
 class BookDeleteAPIView(generics.DestroyAPIView):
     queryset = Book.objects.all()
